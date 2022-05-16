@@ -1,12 +1,10 @@
 /*Main style*/
-
 :root {
     --color-green: #7cffcb;
     --color-black: #000;
     --color-white: #fff;
     --font-size: calc(1rem / 16);
 }
-
 
 html {
     scroll-behavior: smooth;
@@ -55,7 +53,6 @@ body {
 }
 
 /*======header========*/
-
 .header {
     background-color: var(--color-green);
     box-shadow: 0 10rem 20rem 0 rgb(0 0 0 / 20%);
@@ -73,7 +70,6 @@ body {
     align-items: center;
     padding-top: 15rem;
     margin-bottom: 15rem;
-
 }
 
 .logo__link {
@@ -83,14 +79,11 @@ body {
 }
 
 /*main*/
-
-
 .main {
     flex-grow: 1;
     width: 950rem;
     margin: 0 auto;
 }
-
 
 .slider__inner {
     width: 100%;
@@ -108,7 +101,6 @@ body {
     align-self: center;
 }
 
-
 .slider__items {
     grid-column-start: 1;
     grid-column-end: 7;
@@ -120,7 +112,6 @@ body {
     overflow: hidden;
     display: flex;
 }
-
 
 .slider__content-texts {
     grid-column-start: 1;
@@ -186,12 +177,10 @@ body {
     display: none;
 }
 
-
-input[name='radiobutton']:checked + label {
+.slider__radio:checked + .slider__navigation-label {
     background: var(--color-black);
     box-sizing: border-box;
 }
-
 
 .slider__item-content {
     min-width: 700rem;
@@ -247,11 +236,9 @@ input[name='radiobutton']:checked + label {
 }
 
 /*footer*/
-
 .footer {
     padding: 15rem 0;
     background-color: var(--color-green);
-
 }
 
 .footer__container {
@@ -266,7 +253,6 @@ input[name='radiobutton']:checked + label {
     align-items: center;
 }
 
-
 .footer__data-link:hover {
     color: var(--color-white);
 }
@@ -276,10 +262,7 @@ input[name='radiobutton']:checked + label {
 }
 
 /*adaptive*/
-
-
 @media (max-width: 950px) {
-
     .main {
         width: calc(90vw - 40rem - 50rem);
     }
@@ -331,7 +314,6 @@ input[name='radiobutton']:checked + label {
         height: 40rem;
         min-width: calc(90vw - 40rem - 110rem);
     }
-
 }
 
 @media (max-width: 660px) {
@@ -360,7 +342,6 @@ input[name='radiobutton']:checked + label {
     }
 
     .slider__navigation-label {
-
         height: 6rem;
         width: 40rem;
     }
